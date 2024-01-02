@@ -2,12 +2,16 @@
 <html lang="fr">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" media="screen">
-	<link rel="stylesheet" href="./assets/style.css" media="screen">
+	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" media="all">
+	<link rel="stylesheet" href="./assets/style.css" media="all">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet" async>
 	<meta charset="UTF-8">
+	<script src="./assets/bootstrap/bootstrap.bundle.js" defer></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" async></script>
+	<script src="./assets/maugallery.js" defer></script>
+	<script src="./assets/scripts.js" defer></script>
 	<title>Nina Carducci - Photographe Professionnelle</title>
 	<meta name="description" content="Découvrez le portfolio de Nina Carducci, photographe professionnelle capturant vos moments précieux avec passion. Services de shooting photo, retouches, et albums photos personnalisés. Contactez-nous pour immortaliser vos instants uniques.">
 </head>
@@ -37,7 +41,7 @@
 			<div class="carousel-item active">
 				<img srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-300.webp 300w,
 							 ./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-1920.webp 1920w"
-							 sizes= "50vw"
+							 sizes="(min-width: 2040px) 1920px, calc(94.19vw + 17px)"
 					 src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp"
 					 class="d-block w-100" alt="Homme brun de dos tenant une malette qui marche" loading="lazy">
 			</div>
@@ -71,8 +75,8 @@
 </section>
 <section id="about">
 	<div class="picture left">
-		<img  srcset="./assets/images/nina-desktop.webp, ./assets/images/nina-mobile.webp"	
-		sizes="(max-width: 600px) 100vw, 50vw"  alt="Photo de nina photographe" loading="eager">
+		<img  srcset="./assets/images/nina-desktop.webp, ./assets/images/nina-mobile.webp" src="./assets/images/nina.webp"	
+		sizes="100vw"  alt="Photo de nina photographe" loading="eager">
 	</div>
 	<div id="about-me">
 		<h3 class="about-me__title">A propos de moi</h3>
@@ -225,9 +229,5 @@
 		</div>
 	</div>
 </footer>
-<script src="./assets/bootstrap/bootstrap.bundle.js" defer></script>
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" async></script>
-	<script src="./assets/maugallery.js" defer></script>
-	<script src="./assets/scripts.js" defer></script>
 </body>
 </html>
